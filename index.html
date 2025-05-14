@@ -89,15 +89,17 @@
             </div>
         </div>
 
-        <!-- Mesaj Gönderme Formu -->
-        <div id="contactForm" class="box">
-            <h3>Mesaj Gönder</h3>
-            <input type="text" placeholder="Adınız" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mesajınız" required></textarea>
-            <button>Mesajı Gönder</button>
-        </div>
-    </div>
+  <!-- Mesaj Gönderme Formu -->
+<div id="contactForm" class="box">
+    <h3>Mesaj Gönder</h3>
+    <form id="messageForm" action="mesaj_kaydet.php" method="post">
+        <input type="text" name="ad" placeholder="Adınız" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="mesaj" placeholder="Mesajınız" required></textarea>
+        <button type="submit">Mesajı Gönder</button>
+    </form>
+</div>
+
 
     <script src="script.js"></script>
 </body>
