@@ -1,0 +1,158 @@
+/* Genel Sayfa */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f5e8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.4s, color 0.4s;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Container */
+#container {
+    width: 80%;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+/* Tarih-Saat */
+#datetime {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Koyu Mod Butonu */
+.dark-mode-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    background-color: #3e8f66;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.dark-mode .dark-mode-toggle {
+    background-color: #6fdba7;
+    color: #222;
+}
+
+/* Başlıklar */
+#header {
+    text-align: center;
+}
+
+.name {
+    font-size: 32px;
+    color: #3e8f66;
+}
+
+.dark-mode .name {
+    color: #a2f4c7;
+}
+
+.title {
+    font-size: 20px;
+    color: #666;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 150px;
+    border-radius: 10px;
+    border: 3px solid #3e8f66;
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.1);
+}
+
+/* Kutu Stili */
+.box {
+    background-color: #e4fbe2;
+    border-left: 6px solid #3e8f66;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .box {
+    background-color: #2d3a2f;
+    border-left: 6px solid #6fdba7;
+}
+
+/* Başlıklar */
+h3 {
+    margin-top: 0;
+    color: #3e8f66;
+}
+
+.dark-mode h3 {
+    color: #6fdba7;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+/* Mesaj Formu */
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#contactForm button {
+    background-color: #3e8f66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #326e51;
+}
+
+/* Competence Arama */
+#searchBox {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+/* Tarih ve Saat Kutusu */
+#datetime-box {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #e4fbe2;
+    color: #333;
+    border: 2px solid #3e8f66;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 100, 0, 0.2);
+}
+
+.dark-mode #datetime-box {
+    background-color: #2d3a2f;
+    color: #e0e0e0;
+    border: 2px solid #6fdba7;
+}
