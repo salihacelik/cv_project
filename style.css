@@ -22,6 +22,7 @@ body {
 
 /* Tarih-Saat */
 #datetime {
+
     position: fixed;
     top: 15px;
     left: 15px;
@@ -156,3 +157,5 @@ ul {
     color: #e0e0e0;
     border: 2px solid #6fdba7;
 }
+
+
