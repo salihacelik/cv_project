@@ -30,3 +30,31 @@ searchBox.addEventListener('input', () => {
         item.style.display = item.textContent.toLowerCase().includes(query) ? '' : 'none';
     });
 });
+
+
+  // Form gönderildiğinde çalışacak
+  document.getElementById("messageForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Sayfa yenilenmesini engelle
+      var form = event.target;
+
+      // AJAX ile formu gönder
+      var formData = new FormData(form);
+
+      // Mesajı kaydetmek için PHP'ye gönder
+      fetch("m_kaydet.php", {
+          method: "POST",
+          body: formData
+      })
+      .then(response => {
+          if (response.ok) {
+              // Mesaj başarıyla gönderildiğinde sayfayı yenile
+              form.reset();  // Formu temizle
+              window.location.reload();  // Sayfayı yenile
+          }
+      })
+      .catch(error => {
+          console.error("Mesaj gönderilemedi: ", error);
+      });
+  });
+
+
